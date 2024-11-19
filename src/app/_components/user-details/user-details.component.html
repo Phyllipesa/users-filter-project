@@ -1,0 +1,36 @@
+<div class="user-details">
+    <mat-list>
+        <mat-list-item class="u-text-align-center">
+            <span class="mat-headline-medium">Detalhes do Usuário</span>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item >
+            <span class="mat-headline-medium">Nome: </span><span class="mat-headline-small">{{ user.nome | dashIfEmpty }}</span>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item >
+            <span class="mat-headline-medium">Email: </span><span class="mat-headline-small">{{ user.email | dashIfEmpty}}</span>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item >
+            <span class="mat-headline-medium">Telefone: </span><span class="mat-headline-small">{{ user.telefone | phone }}</span>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item >
+            <span class="mat-headline-medium">Endereço: </span><span class="mat-headline-small">{{ user.endereco | address }} </span>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item >
+            <span class="mat-headline-medium">Status: </span><span class="mat-headline-small">{{ user.ativo | status }}</span>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item >
+            <span class="mat-headline-medium">Função: </span><span class="mat-headline-small">{{ user.funcao | dashIfEmpty }}</span>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item >
+            <span class="mat-headline-medium">Data de Cadastro: </span><span class="mat-headline-small">{{ user.dataCadastro | date:'dd/MM/yyyy' | dashIfEmpty}}</span>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+    </mat-list>
+</div>
